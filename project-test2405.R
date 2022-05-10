@@ -105,7 +105,7 @@ term.freq <- colSums(as.matrix(dtm)) #summarize each row (number of appearances 
 top.terms <- term.freq[order(term.freq, decreasing = T)][1:100]
 freq.df<-data.frame(word=names(term.freq),frequency=term.freq)
 freq.df<-freq.df[order(freq.df[,2], decreasing=T),]
-head(freq.df,10)
+head(freq.df,30)
 
 
 #number of topics
